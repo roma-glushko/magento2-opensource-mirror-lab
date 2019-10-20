@@ -44,5 +44,5 @@ git diff 2.2.10 2.3.3 -G "@deprecated" -- vendor/magento/*
 Get all deleted files between 2.2.10 and 2.3.3:
 
 ```bash
-git diff 2.2.10 2.3.3 --diff-filter=D -- vendor/magento/* ":(exclude)*Test.php" ":(exclude)*/tests/*"
+git diff 2.2.10 2.3.3 --diff-filter=D -- vendor/magento/* ":(exclude)*Test.php"
 ```
