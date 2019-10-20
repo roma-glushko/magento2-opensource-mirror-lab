@@ -34,3 +34,9 @@ Get all classes marked as @api from 2.2.0 to 2.3.0:
 ```bash
 git diff 2.2.0 2.3.0 -G "@api"
 ```
+
+Find all deprecated classes from 2.2.10 to 2.3.3:
+
+```bash
+git diff 2.2.10 2.3.3 -G "@deprecated" -- vendor/magento/*
+```
