@@ -15,3 +15,8 @@ Generate diff file between Magento 2.3.2-p2 version and Magento 2.3.3:
 ```bash
 git diff 2.3.2-p2..2.3.3 > difference.diff
 ```
+
+Changes between 2.3.2 and 2.3.2-p2 in Magento packages and without tests: 
+```bash
+git diff 2.3.2 2.3.2-p2  -- vendor/magento/* vendor/amzn/* vendor/temando/* vendor/klarna/* vendor/dotmailer/*  ":(exclude)*Test.php" ":(exclude)*/tests/*"
+```
