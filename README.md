@@ -10,3 +10,8 @@ Check whenever step-navigator.js file was changed in 2.3.3 comparing to its stat
 ```bash
 git diff 2.2.6..2.3.3 -- vendor/magento/module-checkout/view/frontend/web/js/model/step-navigator.js  
 ```
+
+Generate diff file between Magento 2.3.2-p2 version and Magento 2.3.3:
+```bash
+git diff 2.3.2-p2..2.3.3 > difference.diff
+```
