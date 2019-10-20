@@ -12,16 +12,25 @@ git diff 2.2.6..2.3.3 -- vendor/magento/module-checkout/view/frontend/web/js/mod
 ```
 
 Generate diff file between Magento 2.3.2-p2 version and Magento 2.3.3:
+
 ```bash
 git diff 2.3.2-p2..2.3.3 > difference.diff
 ```
 
 Changes between 2.3.2 and 2.3.2-p2 in Magento packages and without tests: 
+
 ```bash
 git diff 2.3.2 2.3.2-p2  -- vendor/magento/* vendor/amzn/* vendor/temando/* vendor/klarna/* vendor/dotmailer/*  ":(exclude)*Test.php" ":(exclude)*/tests/*"
 ```
 
 Changes in all phtml templates that were done from 2.3.2 to 2.3.2-p2:
+
 ```bash
 git diff 2.3.2 2.3.2-p2 -- `find . -name '*.phtml'`
+```
+
+Get all classes marked as @api from 2.2.0 to 2.3.0:
+
+```bash
+git diff 2.2.0 2.3.0 -G "@api"
 ```
