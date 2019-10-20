@@ -1,6 +1,6 @@
 # magento2-opensource-mirror-lab
 
-This repository will provide useful notes on how to leverage Magento2 OpenSource Mirror repository (https://github.com/roma-glushko/magento2-open-source-mirror) to find differences between
+This repository will provide useful notes on how to leverage Magento2 OpenSource Mirror repository (https://github.com/roma-glushko/magento2-opensource-mirror) to find differences between
 Magento 2 releases.
 
 ## Commands
