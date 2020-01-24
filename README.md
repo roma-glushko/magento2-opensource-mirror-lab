@@ -3,6 +3,32 @@
 This repository will provide useful notes on how to leverage Magento2 OpenSource Mirror repository (https://github.com/roma-glushko/magento2-opensource-mirror) to find differences between
 Magento 2 releases.
 
+## Prerequisites 
+To be able to use the diff commands described in the section below, you will need to clone the [Magento2 OpenSource Mirror repository](https://github.com/roma-glushko/magento2-opensource-mirror) and make sure that you have the branches which you are going to compare in the list of your local branches.
+You can significantly speedup the process by using the following commands when cloning the [Magento2 OpenSource Mirror repository](https://github.com/roma-glushko/magento2-opensource-mirror)
+
+```bash
+cd ~/Projects/
+```
+
+```bash
+git clone --mirror https://github.com/roma-glushko/magento2-opensource-mirror.git magento2-opensource-mirror/.git
+```
+
+```bash
+cd magento2-opensource-mirror
+```
+
+```bash
+git config --bool core.bare false
+```
+
+```bash
+ git checkout 2.3.3
+```
+
+This way you will [clone repository with all remotely tracked branches.](https://git.wiki.kernel.org/index.php/Git_FAQ#How_do_I_clone_a_repository_with_all_remotely_tracked_branches.3F)
+   
 ## Commands
 
 Check whenever step-navigator.js file was changed in 2.3.3 comparing to its state in 2.2.6:
